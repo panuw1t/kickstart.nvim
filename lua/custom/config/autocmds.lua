@@ -23,7 +23,7 @@ autocmd({ 'FileType' }, {
 autocmd({ 'LspAttach' }, {
   group = augroup,
   callback = function()
-    keymap('n', '<leader>cf', ':lua vim.lsp.buf.format()<cr>', { buffer = true, desc = 'Format code' })
+    keymap('n', '<leader>cf', ':lua vim.lsp.buf.format()<cr>', { buffer = true, desc = 'Format code with lsp' })
   end,
 })
 

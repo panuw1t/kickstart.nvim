@@ -16,7 +16,7 @@ dashboard.section.header.val = {
 dashboard.section.buttons.val = {
   dashboard.button('e', '  New file', '<cmd>ene<CR>'),
   dashboard.button('SPC f f', '󰈞  Find file'),
-  dashboard.button('c', '  Configuration', ':e $MYVIMRC | :cd %:p:h | split . | wincmd k | pwd<CR>'),
+  dashboard.button('c', '  Configuration', ':e $MYVIMRC | :cd %:p:h | pwd<CR>'),
   dashboard.button('u', '  Update plugins', '<cmd>Lazy sync<CR>'),
   dashboard.button('q', '󰅚  Quit', '<cmd>qa<CR>'),
 }

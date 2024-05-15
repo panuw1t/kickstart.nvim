@@ -6,6 +6,7 @@ opt.clipboard = 'unnamedplus' -- Copy/paste to system clipboard
 opt.swapfile = false -- Don't use swapfile
 opt.completeopt = 'menuone,noinsert,noselect' -- Autocomplete options
 opt.undofile = true -- Save undo history
+opt.backup = false -- no backup file
 --opt.fileencoding = 'utf-8'            -- the encoding written to a file
 
 --}}}
@@ -27,7 +28,7 @@ opt.termguicolors = true -- Enable 24-bit RGB colors
 opt.laststatus = 3 -- Set global statusline
 opt.scrolloff = 8 -- Set scroll off
 opt.signcolumn = 'yes' -- always show the sign column, otherwise it would shift the text each time
-vim.opt.cursorline = false -- highlight cursorline
+opt.cursorline = false -- highlight cursorline
 
 --}}}
 

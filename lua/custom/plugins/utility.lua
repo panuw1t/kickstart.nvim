@@ -12,14 +12,6 @@ return {
     end,
   },
 
-  -- show diagnostics on top-right corner only when cursor is poisition.
-  {
-    'dgagn/diagflow.nvim',
-    -- event = 'LspAttach', This is what I use personnally and it works great
-    event = 'LspAttach',
-    opts = {},
-  },
-
   -- start-up neovim
   {
     'goolord/alpha-nvim',
@@ -44,7 +36,17 @@ return {
       -- - saiw) - [S]urround [A]dd [I]nner [W]ord [)]Paren
       -- - sd'   - [S]urround [D]elete [']quotes
       -- - sr)'  - [S]urround [R]eplace [)] [']
-      require('mini.surround').setup()
+      require('mini.surround').setup {
+        mappings = {
+          add = 'ys',
+          delete = 'ds',
+          find = 'ysf', -- Find surrounding (to the right)
+          find_left = 'ysF', -- Find surrounding (to the left)
+          highlight = 'ysh', -- Highlight surrounding
+          replace = 'ysr', -- Replace surrounding
+          update_n_lines = 'ysn', -- Update `n_lines`
+        },
+      }
 
       -- ... and there is more!
       --  Check out: https://github.com/echasnovski/mini.nvim

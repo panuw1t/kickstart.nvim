@@ -17,6 +17,7 @@ return {
       ['<leader>f'] = { name = '[F]ind', _ = 'which_key_ignore' },
       ['<leader>t'] = { name = '[T]oggle', _ = 'which_key_ignore' },
       ['<leader>v'] = { name = 'split window', _ = 'which_key_ignore' },
+      ['<leader>x'] = { name = 'trouble', _ = 'which_key_ignore' },
 
       require('which-key').register({
         ['<leader>'] = { name = 'VISUAL <leader>' },
