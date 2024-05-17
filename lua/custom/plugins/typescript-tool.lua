@@ -4,7 +4,7 @@ return {
   opts = {
     settings = {
       tsserver_format_options = {
-        insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces = true,
+        insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces = false,
         insertSpaceAfterOpeningAndBeforeClosingEmptyBraces = true,
       },
     },
