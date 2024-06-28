@@ -1,6 +1,7 @@
 local opt = vim.opt -- Set options (global/buffer/windows-scoped)
 
 -- General ---------------------------------------------{{{
+opt.shell = 'pwsh' -- set shell to powershell 7
 opt.mouse = 'a' -- Enable mouse support
 opt.clipboard = 'unnamedplus' -- Copy/paste to system clipboard
 opt.swapfile = false -- Don't use swapfile

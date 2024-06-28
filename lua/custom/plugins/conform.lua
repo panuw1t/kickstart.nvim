@@ -12,15 +12,9 @@ return {
         --
         -- You can use a sub-list to tell conform to run *until* a formatter
         -- is found.
-        javascript = { { 'prettier', 'prettierd' } },
-        typescriptreact = { { 'prettier', 'prettierd' } },
+        javascript = { { 'prettier' } },
+        typescriptreact = { { 'prettier' } },
       },
     }
-    vim.keymap.set('n', '<leader>cc', function()
-      require('conform').format {
-        lsp_fallback = true,
-        timeout_ms = 500,
-      }
-    end, { desc = 'Format code with conform' })
   end,
 }

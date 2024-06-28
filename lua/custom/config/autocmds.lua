@@ -5,7 +5,6 @@ local keymap = vim.keymap.set -- Shorten function name
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
--- general -- {{{
 autocmd({ 'FileType' }, {
   pattern = { 'lua' },
   group = augroup,
@@ -27,10 +26,6 @@ autocmd({ 'LspAttach' }, {
   end,
 })
 
---}}}
-
--- abbreviate correct wrong word ------------------------------ {{{
 vim.cmd [[ iabbrev waht what
     iabbrev tehn then
 ]]
--- }}}
